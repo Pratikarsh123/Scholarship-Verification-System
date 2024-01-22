@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class="text-center">Student Registration</h1>
+    </header>
+
+    <section class="container" id="registration">
+        <form id="registration-form" action="connect.php" method="post">
+            <h3>Student Details</h3>
+            <div class="form-group">
+                <label for="userID">Create Your UserID:</label>
+                <input type="text" class="form-control" id="userID" name="userID" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Create Your Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" class="form-control" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="stateOfOrigin">State of Origin:</label>
+                <select class="form-control" id="stateOfOrigin" name="stateOfOrigin" required>
+                    <option value="">Select State</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <!-- Add more states as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Contact Email:</label>
+                <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="contactPhone">Contact Phone:</label>
+                <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="aadharNumber">Aadhar Number:</label>
+                <input type="text" class="form-control" id="aadharNumber" name="aadharNumber" placeholder="Enter Aadhar Number" required>
+            </div>
+            <div class="form-group">
+                <label for="incomeCertificateNumber">Income Certificate Number:</label>
+                <input type="text" class="form-control" id="incomeCertificateNumber" name="incomeCertificateNumber" placeholder="Enter Income Certificate Number" required>
+            </div>
+            <div class="form-group">
+                <label for="residentialCertificateNumber">Residential Certificate Number:</label>
+                <input type="text" class="form-control" id="residentialCertificateNumber" name="residentialCertificateNumber" placeholder="Enter Residential Certificate Number" required>
+            </div>            
+
+            <h3>College Details</h3>
+            <div class="form-group">
+                <label for="collegeName">College Name:</label>
+                <input type="text" class="form-control" id="collegeName" name="collegeName" required>
+            </div>
+            <div class="form-group">
+                <label for="collegeLocation">College Location:</label>
+                <input type="text" class="form-control" id="collegeLocation" name="collegeLocation" required>
+            </div>
+            <div class="form-group">
+                <label for="collegeType">College Type:</label>
+                <select class="form-control" id="collegeType" name="collegeType" required>
+                    <option value="">Select College Type</option>
+                    <option value="Public">Public</option>
+                    <option value="Private">Private</option>
+                    <option value="Private">Semi-Government</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="collegeID">College ID:</label>
+                <input type="text" class="form-control" id="collegeID" name="collegeID" placeholder="Enter College ID" required>
+            </div> 
+
+            <h3>Academic Details</h3>
+            <div class="form-group">
+                <label for="currentYear">Current Academic Year:</label>
+                <input type="text" class="form-control" id="currentYear" name="currentYear" placeholder="Enter Current Academic Year" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course Enrolled:</label>
+                <input type="text" class="form-control" id="course" name="course" placeholder="Enter Course Enrolled" required>
+            </div>
+            <div class="form-group">
+                <label for="registrationNumber">College Registration Number:</label>
+                <input type="text" class="form-control" id="registrationNumber" name="registrationNumber" placeholder="Enter College Registration Number" required>
+            </div>
+
+            <h3>Financial Details</h3>
+            <div class="form-group">
+                <label for="familyIncome">Family Income:</label>
+                <input type="text" class="form-control" id="familyIncome" name="familyIncome" placeholder="Enter Family Income" required>
+            </div>
+            <div class="form-group">
+                <label for="bankAccountNumber">Bank Account Number:</label>
+                <input type="text" class="form-control" id="bankAccountNumber" name="bankAccountNumber" placeholder="Enter Bank Account Number" required>
+            </div>
+            <div class="form-group">
+                <label for="bankBranch">Bank Name:</label>
+                <input type="text" class="form-control" id="bankBranch" name="bankBranch" placeholder="Enter Bank Branch" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <div id="registration-result" class="mt-3"></div>
+    </section>
+
+    <footer class="container text-center mt-4">
+        <p>&copy; 2023 Scholarship Registration System</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="reg.js"></script>
+</body>
+</html>

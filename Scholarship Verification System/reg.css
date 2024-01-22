@@ -1,0 +1,88 @@
+/* Add your custom CSS styles here */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+header.jumbotron {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+header.jumbotron:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#verification-result, #institution-verification-result {
+    font-weight: bold;
+}
+
+#registration-result {
+    font-weight: bold;
+}
+
+/* Input field styles */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-control:hover, .form-control:focus {
+    border-color: #007BFF;
+}
+
+/* Select field styles */
+select.form-control {
+    height: 40px;
+}
+
+/* Alert styles */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
